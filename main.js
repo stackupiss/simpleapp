@@ -6,7 +6,7 @@ const PORT = parseInt(process.argv[2]) || parseInt(process.env.APP_PORT) || 3000
 
 const app = express()
 
-app.engine('hbs', hbs())
+app.engine('hbs', hbs({ defaultLayout: false }))
 
 app.set('view engine', 'hbs')
 
