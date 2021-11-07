@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:17
 
 ENV APP_PORT=3000 
 ENV APP_DIR=/app
