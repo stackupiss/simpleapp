@@ -1,15 +1,11 @@
-FROM node:latest
+FROM node:17
 
 ENV APP_PORT=3000 
-#ENV APP_DIR=/app
+ENV APP_DIR=/app
 
-#WORKDIR ${APP_DIR}
+WORKDIR ${APP_DIR}
 
-ADD main.js .
-ADD package.json .
-ADD package-lock.json .
-ADD public public
-ADD views views
+ADD . .
 
 RUN npm install
 
