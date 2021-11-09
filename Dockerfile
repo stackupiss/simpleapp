@@ -7,7 +7,7 @@ WORKDIR ${APP_DIR}
 
 ADD . .
 
-RUN npm install
+RUN npm ci
 
 EXPOSE ${APP_PORT}
 
